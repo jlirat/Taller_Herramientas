@@ -3,8 +3,6 @@ package ejercicios.ejercicio4;
 import java.awt.*;
 import java.awt.event.*;
 
-import javax.swing.border.Border;
-
 public class Menu extends Frame implements ActionListener {
 
     private Label lbl_msg;
