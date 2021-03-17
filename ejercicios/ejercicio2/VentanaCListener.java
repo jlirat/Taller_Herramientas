@@ -7,6 +7,7 @@ import java.awt.Label;
 import java.awt.TextArea;
 import java.awt.BorderLayout;
 import java.awt.event.*;
+import java.util.ArrayList;
 
 public class VentanaCListener extends Frame implements ActionListener  {
 
@@ -24,6 +25,7 @@ public class VentanaCListener extends Frame implements ActionListener  {
      * Inicializamos los widgets y los metemos al contenedor
      */
     public void init() {
+        array = new ArrayList<>();
         isClicked = false;
         btn_click = new Button("Aceptar");
         btn_clear = new Button("Limpiar");
@@ -57,11 +59,27 @@ public class VentanaCListener extends Frame implements ActionListener  {
         } */
         if (arg0.getSource() == btn_click) {
             String texto = txt_in.getText();
+            if (texto.equals("SUMAR")) { 
+                if (array.size() > 0) {
+                    Integer i = 0;
+                    for(Integer n: array) {
+                        i = i + n;
+                    }
+                    texto = txt_in.getText() + (" " + i.toString());
+                }
+            } else {
+                try{
+                    Integer i = Integer.parseInt(texto);
+                    array.add(i);
+                    }catch(Exception e) {}
+            }
+            
             txt_result.append(texto + "\n");
         }
         if (arg0.getSource() == btn_clear) {
             txt_result.setText("");
             txt_in.setText("");
+            array.clear();
         }
         isClicked = !isClicked;
     }
@@ -73,7 +91,7 @@ public class VentanaCListener extends Frame implements ActionListener  {
     TextField txt_in;
     Label lbl_msg;
     TextArea txt_result;
-
+    ArrayList<Integer> array;
     boolean isClicked;
 
 }
