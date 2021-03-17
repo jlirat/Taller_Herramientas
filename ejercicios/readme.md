@@ -15,3 +15,7 @@ Modifica la clase del Ejercicio 2 e implementa una sumadora, que permita ir intr
 ## Ejercicio 4
 
 Hacer uso de contenedores y Layouts para la organización de los widgets
+
+## Ejercicio 5
+
+Utilizando canvas, realiza una figura de tu preferencia y dibújala en una ventana, aplicando el MouseListener realiza acciones para que se dibuje en diferentes áreas de la ventana.
