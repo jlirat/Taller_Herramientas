@@ -29,7 +29,7 @@ public class Pantalla extends Frame implements MouseListener, MouseMotionListene
         this.addKeyListener(this);
         this.add(obj_pintable);
 
-        this.setSize(500,500);
+        this.setSize(1024,500);
         this.setVisible(true);
     }
 
@@ -102,11 +102,12 @@ public class Pantalla extends Frame implements MouseListener, MouseMotionListene
                 case 'd':
                 case 'D':
                     obj_pintable.setX(obj_pintable.getX() + 1);
-
+                    obj_pintable.tick();
                     break;
                 case 'a':
                 case 'A':
                     obj_pintable.setX(obj_pintable.getX() - 1);
+                    obj_pintable.tick();
                     break;
                 case 'w':
                 case 'W':
