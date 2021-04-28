@@ -1,8 +1,8 @@
-package ejercicios.ejercicio6;
+package ejercicios1p.ejercicio6;
 import java.awt.Frame;
 import java.awt.event.*;
 
-import ejercicios.ejercicio5.Contenedor;
+import ejercicios1p.ejercicio5.Contenedor;
 
 public class Pantalla extends Frame implements MouseListener, MouseMotionListener, KeyListener {
 

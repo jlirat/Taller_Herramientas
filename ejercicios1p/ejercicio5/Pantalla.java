@@ -1,4 +1,4 @@
-package ejercicios.ejercicio5;
+package ejercicios1p.ejercicio5;
 import java.awt.Frame;
 import java.awt.event.*;
 

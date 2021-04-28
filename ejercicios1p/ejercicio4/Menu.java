@@ -1,4 +1,4 @@
-package ejercicios.ejercicio4;
+package ejercicios1p.ejercicio4;
 
 import java.awt.*;
 import java.awt.event.*;
