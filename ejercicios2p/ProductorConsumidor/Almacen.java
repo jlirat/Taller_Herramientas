@@ -5,6 +5,10 @@ public class Almacen {
     int ptr = 0;
     private boolean isFull = false;
     private boolean isEmpty = true;
+    public Almacen() {
+        isEmpty = true;
+        isFull = false;
+    }
     public synchronized char obtener() {
         while (isEmpty) {
             try {

@@ -30,15 +30,15 @@ public class Pantalla extends Frame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent arg0) {
-        System.out.println("Clicked");
+        obj_pintable.tick();
         if (obj_pintable.isClicked()) {
             obj_pintable.setW(arg0.getX());
             obj_pintable.setH(arg0.getY());
-            obj_pintable.repaint();
         } else {
             obj_pintable.setX(arg0.getX());
             obj_pintable.setY(arg0.getY());
         }
+        obj_pintable.repaint();
         obj_pintable.setClicked();
         
         
